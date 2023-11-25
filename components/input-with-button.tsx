@@ -2,12 +2,14 @@ type InputWithButtonProps = {
   inputPlaceholder: string;
   buttonText: string;
   onSubmit?: (input: string) => void;
+  className?: string;
 };
 
 export default function InputWithButton({
   inputPlaceholder,
   buttonText,
   onSubmit,
+  className,
 }: InputWithButtonProps) {
   function submitWrapper(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -17,7 +19,7 @@ export default function InputWithButton({
   }
 
   return (
-    <form onSubmit={submitWrapper} className="flex">
+    <form onSubmit={submitWrapper} className={`flex ${className}`}>
       <input
         name="input"
         type="text"

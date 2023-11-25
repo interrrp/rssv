@@ -10,4 +10,8 @@
   body {
     @apply bg-black text-white;
   }
+
+  a[href] {
+    @apply text-blue-500 underline underline-offset-4;
+  }
 }
