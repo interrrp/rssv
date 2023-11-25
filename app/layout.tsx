@@ -7,8 +7,8 @@ import "@/app/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mini Next",
-  description: "A minimal Next.js template",
+  title: "rssv",
+  description: "📰 An RSS feed viewer",
 };
 
 export default function Layout({ children }: { children: ReactNode }) {
