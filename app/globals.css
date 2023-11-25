@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply border-zinc-700;
+  }
+
   body {
     @apply bg-black text-white;
   }
